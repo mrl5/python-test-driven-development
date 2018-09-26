@@ -5,6 +5,8 @@
 * [Levels of testing](#levels-of-testing)
 * [Unit Testing](#unit-testing)
 * [Test-driven development](#test-driven-development)
+* [Python virtual environments](#python-virtual-environments)
+* [pytest library](#pytest-library)
 
 ## Levels of testing
 (safety nets)
@@ -60,6 +62,31 @@
 - you may not write any production code unitl you have written **a failing** unit test
 - you may not write more of a unit test than is sufficient to fail, and not compiling is failing
 - you may not write more production code than is sufficient to pass the currently failing unit test
+
+## Python virtual environments
+- all Python packages are installed to a single directory on the system
+- sometimes different projects use different versions of given library
+- virtual environments solve this problem by creating isolated Python environments that can be customized per project
+
+### Python3 - setting up Python virtual environment
+1. `mkdir my_new_venv`
+
+2. `python3 -m venv my_new_venv`
+
+3. `source my_new_venv/bin/activate`
+
+### Python2.7 - setting up Python virtual environment
+1. `pip install virtualenv`
+
+2. `mkdir my_new_venv`
+
+3. `virtualenv my_new_venv`
+
+4. `source ./my_new_venv/bin/activate`
+
+## pytest library
+1. Set up Python virtual environment
+2. `pip install pytest`
 
 [Unit Testing and Test Driven Development in Python]: https://www.linkedin.com/learning/unit-testing-and-test-driven-development-in-python
 [Richard Wells]: https://www.linkedin.com/learning/instructors/richard-wells
